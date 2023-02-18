@@ -17,7 +17,10 @@ class _HomePageState extends State<HomePage> {
 
   @override
   Widget build(BuildContext context) => Scaffold(
-        appBar: buildAppBar(),
+        appBar: PreferredSize(
+          preferredSize: const Size.fromHeight(100),
+          child: buildAppBar(),
+        ),
         body: Padding(
           padding: const EdgeInsets.all(8),
           child: Column(

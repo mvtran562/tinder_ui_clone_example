@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:tinder_ui_clone_example/page/home_page.dart';
+import 'package:tinder_ui_clone_example/page/login_page.dart';
 import 'package:tinder_ui_clone_example/provider/feedback_position_provider.dart';
 
 void main() {
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
             primarySwatch: Colors.deepOrange,
             visualDensity: VisualDensity.adaptivePlatformDensity,
           ),
-          home: HomePage(),
+          home: LoginPage(),
         ),
       );
 }
